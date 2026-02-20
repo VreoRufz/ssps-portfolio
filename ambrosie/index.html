@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to our fictional czech restaurant</title>
+    <style>
+        /* Setting background color for the page */
+        body {
+            background-color: #fdff8c; /* Light yellow */
+            font-family: Arial, sans-serif;
+            color: #3e1e5d; /* Very dark purple for text */
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Styling the header */
+        header {
+            background-color: #7c8a2e; /* Olive green for header */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    
+        
+        /* Main content section styling */
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Section for restaurant images */
+        .image-section {
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        nav.categories {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+nav.categories button {
+  background: #d8df60; /* světle zelená barva pozadí */
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #212605;
+  cursor: pointer;
+  padding: 10px 22px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(101, 113, 24, 0);
+}
+
+nav.categories button:hover,
+nav.categories button.active {
+  color: white;
+  background-color: #647118;
+  box-shadow: 0 4px 15px rgba(31, 49, 5, 0.7);
+}
+
+
+ table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        th, td {
+            padding: 12px 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #7c8a2e; /* Olive green */
+            color: white;
+        }
+
+        td {
+            background-color: #fdff8c;
+        }
+
+        /* Make the table responsive for smaller screens */
+        @media screen and (max-width: 600px) {
+            table {
+                width: 100%;
+            }
+            th, td {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Vítejte na stránkách restaurace Ambrosie!!</h1>
+        <p>"protože v Chánově mají vždycky hlad"</p>
+<nav class="categories">
+
+    <a href="index.html">
+  <button data-cat="hlavni-stranka">Hlavní stránka</button>
+  </a>
+<a href="jidelnilistek.html">
+  <button data-cat="hlavni-jidla">Jídelní lístek</button>
+</a>
+<a href="napojovylistek.html">
+  <button data-cat="hlavni-napoje">Nápojový lístek</button>
+  </a>
+      <a href="nas-tym.html">
+  <button data-cat="nas-tym">Náš tým</button>
+    </a>
+        <a href="lokace.html">
+  <button data-cat="nas-tym">Lokace</button>
+    </a>
+</nav>
+</header>
+    <!-- Main Content Section -->
+    <div class="content">
+        <h3>Anketa jídlo týdne:</h3>
+        <p>Po objednání jídla dostanete list k hlasování pro jídlo týdne.</p>
+        
+        <!-- Image Section for the Restaurant -->
+        <div class="image-section">
+            <h2>Jídlo týdne:</h2>
+            <!-- Replace the src URL with the actual URL of the image you want to use -->
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthegreekfoodie.com%2Fwp-content%2Fuploads%2F2020%2F04%2FPapoutsakia_SQ.jpg&f=1&nofb=1&ipt=8ae0ca9b1f2c83816e595055e690a1e7be0d384848674de3203a3706017ca9a5" alt="žrádlo týdne">
+            <h3>papoutsakia</h3>
+        </div>
+
+        <!-- More Content -->
+        <p>Máme velkou nabídku dobrých jídel od kuchařů s mišelinskými hvězdami. Přijďte nás navštívit.</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+    
+
+        <!-- table for the opening hours-->
+    <table>
+        <thead>
+            <tr>
+                <th>Den</th>
+                <th>Otevírací doba</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pondělí</td>
+                <td>Zavřeno, otevřeno pouze pro lidi s trvalým bydlištěm v Chánově.</td>
+            </tr>
+            <tr>
+                <td>Úterý</td>
+                <td>12:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td>Středa</td>
+                <td>12:00 - 21:00</td>
+            </tr>
+            <tr>
+                <td>Čtvrtek</td>
+                <td>12:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td>Pátek</td>
+                <td>11:00 - 22:00</td>
+            </tr>
+            <tr>
+                <td>Sobota</td>
+                <td>14:00 - 23:00</td>
+            </tr>
+            <tr>
+                <td>Neděle</td>
+                <td>11:00 - 18:00</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    </footer>
+        <h3>&copy; 2025 Ambrosie. All rights reserved.</h3>
+</body>
+        
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Náš Tým Restaurace</title>
+  <style>
+    body {
+      background-color: #fdff8c;
+      font-family: Arial, sans-serif;
+      color: #2d0035;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #7c8a2e;
+      padding: 20px;
+      text-align: center;
+      color: #fdff8c;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .employee-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .employee {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: #7c8a2e;
+      color: #ffffff;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .employee img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .employee-info {
+      padding: 15px;
+      min-width: 150px;
+    }
+
+    .employee-info h3 {
+      margin: 0 0 5px 0;
+      font-size: 1.1em;
+    }
+
+    .employee-info p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+
+    .employee-note {
+      padding: 15px;
+      border-left: 1px solid rgba(255, 255, 255, 0.2);
+      flex: 1;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Náš tým v restauraci</h1>
+  </header>
+
+  <div class="container">
+    <ul class="employee-list">
+      <li class="employee">
+        <img src=/obrazky/zdenek_pohreich.jpg alt="zdenek_pohreich" />
+        <div class="employee-info">
+          <h3>Zdeněk Pohlreich</h3>
+          <p>Šéfkuchař</p>
+        </div>
+        <div class="employee-note">
+          Zdeněk má michelinskou hvězdu a umí pro vás připravit nejlepší jídlo.
+        </div>
+      </li>
+
+      <li class="employee">
+        <img src=/obrazky/jirik_babica.jpg alt="jiri_babica" />
+        <div class="employee-info">
+          <h3>Jiří Babica</h3>
+          <p>Zástupce šéfkuchaře</p>
+        </div>
+        <div class="employee-note">
+          Jiří umí uvařit jídlo z čehokoliv.        
+        </div>
+      </li>
+
+      <li class="employee">
+        <img src=/obrazky/jaroslav_sapik.jpg alt="jaroslav_sapik" />
+        <div class="employee-info">
+          <h3>Jaroslav Sapík</h3>
+          <p>Kuchař</p>
+        </div>
+        <div class="employee-note">
+          Jaroslav má dlouholetou zkušenost s vařením, dokonce vařil několika prezidentům.
+        </div>
+      </li>
+
+      <li class="employee">
+        <img src=/obrazky/jaromir_soukup.webp alt="jaromir_soukup" />
+        <div class="employee-info">
+          <h3>Jaromír Soukup</h3>
+          <p>Manažer</p>
+        </div>
+        <div class="employee-note">
+          Jaromír řídí restauraci s láskou.
+        </div>
+      </li>
+
+      <li class="employee">
+        <img src=/obrazky/jolanda.png alt="jolanda" />
+        <div class="employee-info">
+          <h3>Jolanda (Věra Nemehová)</h3>
+          <p>Ochutnávačka</p>
+        </div>
+        <div class="employee-note">
+          Jolanda se stará o prvotřídní chuť našich surovin.
+        </div>
+      </li>
+
+      <li class="employee">
+        <img src=/obrazky/jan_puncochar.jpg alt="jan_puncochar" />
+        <div class="employee-info">
+          <h3>Jan Punčochár</h3>
+          <p>Specialista na zeleninu</p>
+        </div>
+        <div class="employee-note">
+          Jan se stará o kvalitu zeleniny v naší kuchyni.
+        </div>
+      </li>
+
+      <li class="employee">
+        <img src=/obrazky/halina_pawlowska.jpeg alt="halina_pawlowska" />
+        <div class="employee-info">
+          <h3>Halina Pawlowská</h3>
+          <p>Číšnice</p>
+        </div>
+        <div class="employee-note">
+          Halina přinese jídlo na váš stůl vcukuletu.
+        </div>
+      </li>
+
+      <li class="employee">
+        <img src=/obrazky/dagmar_patrasova.jpg alt="dagmar_patrasova" />
+        <div class="employee-info">
+          <h3>Dagmar Patrasová</h3>
+          <p>Pomocná číšnice</p>
+        </div>
+        <div class="employee-note">
+          Dagmar vám vždy ochotně poradí s výběrem jídla.
+        </div> 
+      </li>
+
+      <li class="employee">
+        <img src=/obrazky/roman_paulus.webp alt="roman_paulus" />
+        <div class="employee-info">
+          <h3>Roman Paulus</h3>
+          <p>Barman</p>
+        </div>
+        <div class="employee-note">
+          Roman pro umí připravit nejlepší drinky na světě.
+        </div>
+      </li>
+
+      <li class="employee">
+        <img src=/obrazky/Radek_Kasparek.jpg alt="Radek_Kasparek" />
+        <div class="employee-info">
+          <h3>Radek Kašpárek</h3>
+          <p>Uklízeč</p>
+        </div>
+        <div class="employee-note">
+          Radek plní velice důležitou roli, stará se o čistotu naší restaurace.
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>

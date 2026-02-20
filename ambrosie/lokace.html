@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurace Ambrosie - lokace</title>
+
+    <!-- 🖌️ Styles: Page Design Colors -->
+    <style>
+        body {
+            background-color: #fdff8c; /* Straw */
+            color: #281522; /* Very Dark Purple */
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #7c8a2e; /* Olive */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .location {
+            border-bottom: 1px solid #7c8a2e;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+         nav.categories {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+nav.categories button {
+  background: #d8df60; /* světle zelená barva pozadí */
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #212605;
+  cursor: pointer;
+  padding: 10px 22px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(55, 87, 10, 0.7);
+}
+
+nav.categories button:hover,
+nav.categories button.active {
+  color: white;
+  background-color: #647118;
+  box-shadow: 0 4px 15px rgba(31, 49, 5, 0.7);
+}
+
+        .location img {
+            max-width: 300px;
+            height: auto;
+            margin-right: 20px;
+            border: 2px solid #7c8a2e;
+        }
+
+        .location-info {
+            max-width: 600px;
+        }
+
+        footer {
+            background-color: #7c8a2e;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+ 
+    </style>
+</head>
+
+<body>
+
+    <!-- 🏠 Page Header -->
+    <!--<header>
+        <h1>Lokace restaurací Ambrosie</h1>
+        <p>Najdi si nás!</p>
+    </header> -->
+
+    <!-- 📍 Location Section #1 -->
+
+      <header>
+      <h1>Vítejte na stránkách restaurace Ambrosie!!</h1>
+        <p>"protože v Chánově mají vždycky hlad"</p>
+
+  
+    <nav class="categories">
+
+    <a href="index.html">
+  <button data-cat="hlavni-stranka">Hlavní stránka</button>
+  </a>
+<a href="jidelnilistek.html">
+  <button data-cat="hlavni-jidla">Jídelní lístek</button>
+</a>
+<a href="napojovylistek.html">
+  <button data-cat="hlavni-napoje">Nápojový lístek</button>
+  </a>
+      <a href="nas-tym.html">
+  <button data-cat="nas-tym">Náš tým</button>
+    </a>
+        <a href="lokace.html">
+  <button data-cat="nas-tym">Lokace</button>
+    </a>
+</nav>
+</header>
+    <section class="location">
+        <!-- 🖼️ Restaurant Image -->
+        <img src="Ostrava-restaurace.jpg" alt="Restaurant in New York">
+        
+        <!-- 📄 Text Info -->
+        <div class="location-info">
+            <h2>Ostrava</h2>
+            <p>Užívejte si nádherné výhledy na krásné ostravské domy a ulice z pohodlí naší restaurace.</p>
+            <p><strong>Adresa:</strong> Tyršova 31, 702 00 Moravská Ostrava a Přívoz</p>
+        </div>
+    </section>
+
+    <!-- 📍 Location Section #2 -->
+    <section class="location">
+        <img src="Brno-restaurace.jpg" alt="Restaurant in Chicago">
+        <div class="location-info">
+            <h2>Brno</h2>
+            <p>Vychutnávejte si vytříbené pokrmy které chutnají ještě lépe vzhledem k okolí tak krásné přírody.</p>
+            <p><strong>Adresa:</strong> Údolní 532/76, 602 00 Brno-střed-Veveří</p>
+        </div>
+    </section>
+
+    <!-- 📍 Location Section #3 -->
+    <section class="location">
+        <img src="Most-restaurace.jpg" alt="Restaurant in Chánov">
+        <div class="location-info">
+            <h2>Most - Hlavní lokace</h2>
+            <p>Užijte si krajinu v jedinečném sídlišti Chánov, dávejte si však pozor! V Chánově mají vždycky hlad!</p>
+            <p><strong>Adresa:</strong> Čsl. armády 1603, 434 01 Most 1</p>
+        </div>
+    </section>
+   
+        
+    <!-- 🧾 Footer -->
+   <!-- <footer>
+        <p>&copy; 2025 Our Restaurant Chain. All rights reserved</p>
+    </footer>-->
+
+</body>
+</html>

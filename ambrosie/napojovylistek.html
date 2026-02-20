@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<head>
+    <html lang="cs">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+    <title>Nápojový lístek</title>
+    <link rel="stylesheet" href="napojovylistek.css">
+</head>
+
+<body>
+    <header>
+      <h1>Vítejte na stránkách restaurace Ambrosie!!</h1>
+        <p>"protože v Chánově mají vždycky hlad"</p>
+ 
+<!--kategorie-->
+<nav class="categories">
+    <button onclick="window.location.href='index.html'">Hlavní stránka</button>
+  <button class="active" data-cat="alko">Alkoholické nápoje</button>
+  <button data-cat="limonady">Limonády</button>
+  <button data-cat="caje">Čaje</button>
+  <button data-cat="kava">Káva</button>
+  <button data-cat="ostatni">Ostatní</button>
+</nav>
+ </header>
+<!--Alko-->
+<main>
+<h2>Nápojový lístek:</h2>
+  <section class="drink-category" id="alko">
+    <h2>Alkoholické nápoje</h2>
+    <div class="drink">
+      <div class="drink-info">
+        <div class="drink-name">Řecké víno</div>
+        <div class="drink-description">Bílé nebo červené víno</div>
+      </div>
+      <div class="drink-price">70 Kč</div>
+    </div>
+    <div class="drink">
+      <div class="drink-info">
+        <div class="drink-name">Ouzo</div>
+        <div class="drink-description">Řecký anýzový likér (4cl)</div>
+      </div>
+      <div class="drink-price">80 Kč</div>
+    </div>
+    <div class="drink">
+      <div class="drink-info">
+        <div class="drink-name">Mythos pivo</div>
+        <div class="drink-description">Lahvové řecké pivo</div>
+      </div>
+      <div class="drink-price">75 Kč</div>
+    </div>
+  </section>
+
+  <!--Limonády-->
+  <section class="drink-category" id="limonady">
+    <h2>Limonády</h2>
+    <div class="drink">
+      <div class="drink-info">
+        <div class="drink-name">Domácí limonáda</div>
+        <div class="drink-description">Citrónová nebo pomerančová</div>
+      </div>
+      <div class="drink-price">55 Kč</div>
+    </div>
+     <div class="drink">
+      <div class="drink-info">
+        <div class="drink-name">Džus</div>
+        <div class="drink-description">Pomeranč, jablko, nebo ananas</div>
+      </div>
+      <div class="drink-price">50 Kč</div>
+    </div>
+  </section>
+
+  <!--Čaje-->
+  <section class="drink-category" id="caje">
+    <h2>Čaje</h2>
+    <div class="drink">
+      <div class="drink-info">
+        <div class="drink-name">Bylinkový čaj</div>
+        <div class="drink-description">Heřmánek, máta, nebo směs</div>
+      </div>
+      <div class="drink-price">45 Kč</div>
+    </div>
+    <div class="drink">
+      <div class="drink-info">
+        <div class="drink-name">Zelený čaj</div>
+        <div class="drink-description">S citronem nebo medem</div>
+      </div>
+      <div class="drink-price">50 Kč</div>
+    </div>
+     <div class="drink">
+    <div class="drink-info">
+      <div class="drink-name">Ledový čaj</div>
+      <div class="drink-description">Broskev nebo citron</div>
+    </div>
+    <div class="drink-price">50 Kč</div>
+  </div>
+  </section>
+
+  <!--Káva-->
+  <section class="drink-category" id="kava">
+    <h2>Káva</h2>
+    <div class="drink">
+      <div class="drink-info">
+        <div class="drink-name">Frappe</div>
+        <div class="drink-description">Ledová řecká káva s pěnou</div>
+      </div>
+      <div class="drink-price">60 Kč</div>
+    </div>
+    <div class="drink">
+      <div class="drink-info">
+        <div class="drink-name">Espresso</div>
+        <div class="drink-description">Krátká káva s intenzivní chutí</div>
+      </div>
+      <div class="drink-price">45 Kč</div>
+    </div>
+  </section>
+
+  <!--Ostatní-->
+  <section class="drink-category" id="ostatni">
+    <h2>Ostatní</h2>
+    <div class="drink">
+      <div class="drink-info">
+        <div class="drink-name">Minerální voda</div>
+        <div class="drink-description">Perlivá / neperlivá</div>
+      </div>
+      <div class="drink-price">40 Kč</div>
+    </div>
+    <div class="drink">
+    <div class="drink-info">
+      <div class="drink-name">Tonic</div>
+      <div class="drink-description">Osvěžující hořký nápoj (0,25l)</div>
+    </div>
+    <div class="drink-price">45 Kč</div>
+  </div>
+  </section>
+</main>
+
+<script>
+  // jednoduchá aktivace tlačítek kategorií scrollováním do sekce
+  const buttons = document.querySelectorAll('nav.categories button');
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      buttons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+      const cat = button.getAttribute('data-cat');
+      document.getElementById(cat).scrollIntoView({behavior: 'smooth'});
+    });
+  });
+
+  // volitelně: při scrollu zvýraznit aktivní kategorii
+  window.addEventListener('scroll', () => {
+    let fromTop = window.scrollY + 100;
+    buttons.forEach(button => {
+      const cat = button.getAttribute('data-cat');
+      const section = document.getElementById(cat);
+      if (
+        section.offsetTop <= fromTop &&
+        (section.offsetTop + section.offsetHeight) > fromTop
+      ) {
+        buttons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+      }
+    });
+  });
+</script>
+</body>
+</html>

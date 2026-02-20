@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+  </body>
+</html>
+<!DOCTYPE html>
+<head>
+    <html lang="cs">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+    <title>Jídelní lístek</title>
+    <link rel="stylesheet" href="jidelnilistek.css">
+</head>
+
+<body>
+<!--kategorie-->
+
+    <header>
+        <h1>Vítejte na stránkách restaurace Ambrosie!!</h1>
+        <p>"protože v Chánově mají vždycky hlad"</p>
+<nav class="categories">
+  <button onclick="window.location.href='index.html'">Hlavní stránka</button>
+  <button class="active" data-cat="predkrmy">Předkrmy</button>
+  <button data-cat="hlavni-jidla">Hlavní jídla</button>
+  <button data-cat="morske-plody">Mořské plody</button>
+  <button data-cat="dezerty">Dezerty</button>
+</nav>
+</header>
+<!--Předkrmy-->
+<main>
+  <h2>Jídelní lístek:</h2>
+  <section class="dish-category" id="predkrmy">
+    <h2>Předkrmy</h2>
+    <div class="dish">
+      <div class="dish-info">
+        <div class="dish-name">Tzatziki</div>
+        <div class="dish-description">Jogurtový dip s okurkou, česnekem a koprem, podávaný s pita chlebem.</div>
+      </div>
+      <div class="dish-price">89 Kč</div>
+    </div>
+    <div class="dish">
+      <div class="dish-info">
+        <div class="dish-name">Saganaki</div>
+        <div class="dish-description">Smažený sýr, podávaný horký s citronem.</div>
+      </div>
+      <div class="dish-price">129 Kč</div>
+    </div>
+    <div class="dish">
+      <div class="dish-info">
+        <div class="dish-name">Dolmades</div>
+        <div class="dish-description">Vinné listy plněné rýží a bylinkami, podávané s jogurtovým dipem.</div>
+      </div>
+      <div class="dish-price">119 Kč</div>
+    </div>
+  </section>
+
+  <!--Hlavní jídla-->
+  <section class="dish-category" id="hlavni-jidla">
+    <h2>Hlavní jídla</h2>
+    <div class="dish">
+      <div class="dish-info">
+        <div class="dish-name">Gyros</div>
+        <div class="dish-description">Grilované marinované maso, čerstvá zelenina, tzatziki omáčka, zabalené v teplém pita chlebu.</div>
+      </div>
+      <div class="dish-price">139 Kč</div>
+    </div>
+    <div class="dish">
+      <div class="dish-info">
+        <div class="dish-name">Souvlaki</div>
+        <div class="dish-description">Grilované kousky masa (vepřové nebo kuřecí) podávané s pita chlebem a tzatziki.</div>
+      </div>
+      <div class="dish-price">199 Kč</div>
+    </div>
+    <div class="dish">
+      <div class="dish-info">
+        <div class="dish-name">Moussaka</div>
+        <div class="dish-description">Zapečený pokrm z mletého masa, lilku a bešamelu.</div>
+      </div>
+      <div class="dish-price">219 Kč</div>
+    </div>
+    <div class="dish">
+      <div class="dish-info">
+        <div class="dish-name">Pastitsio</div>
+        <div class="dish-description">Zapečené makaróny s mletým masem a bešamelovou omáčkou.</div>
+      </div>
+      <div class="dish-price">209 Kč</div>
+    </div>
+    <div class="dish">
+      <div class="dish-info">
+        <div class="dish-name">Gemista</div>
+        <div class="dish-description">Plněná rajčata a papriky rýží a bylinkami.</div>
+      </div>
+      <div class="dish-price">189 Kč</div>
+    </div>
+    <div class="dish">
+      <div class="dish-info">
+        <div class="dish-name">Papoutsakia</div>
+        <div class="dish-description">Lilky plněné mletým masem a bešamelem, zapečené do zlatova.</div>
+      </div>
+      <div class="dish-price">199 Kč</div>
+    </div>
+  </section>
+
+  <!--Mořské plody-->
+  <section class="dish-category" id="morske-plody">
+    <h2>Mořské plody</h2>
+    <div class="dish">
+      <div class="dish-info">
+        <div class="dish-name">Kalamáry</div>
+        <div class="dish-description">Smažené kroužky kalamárů podávané s citronem.</div>
+      </div>
+      <div class="dish-price">169 Kč</div>
+    </div>
+    <div class="dish">
+      <div class="dish-info">
+        <div class="dish-name">Chobotnice na grilu</div>
+        <div class="dish-description">Grilovaná chobotnice podávaná s olivovým olejem a citronem.</div>
+      </div>
+      <div class="dish-price">219 Kč</div>
+    </div>
+
+  <!--Dezerty-->
+  <section class="dish-category" id="dezerty">
+    <h2>Dezerty</h2>
+    <div class="dish">
+      <div class="dish-info">
+        <div class="dish-name">Baklava</div>
+        <div class="dish-description">Medový koláč s ořechy</div>
+      </div>
+      <div class="dish-price">89 Kč</div>
+    </div>
+    <div class="dish">
+      <div class="dish-info">
+        <div class="dish-name">Loukoumades</div>
+        <div class="dish-description">Řecké kobližky máčené v medu a posypané skořicí.</div>
+      </div>
+      <div class="dish-price">99 Kč</div>
+    </div>
+  </section>
+</main>
+<script>
+  // jednoduchá aktivace tlačítek kategorií scrollováním do sekce
+  const buttons = document.querySelectorAll('nav.categories button');
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      buttons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+      const cat = button.getAttribute('data-cat');
+      document.getElementById(cat).scrollIntoView({behavior: 'smooth'});
+    });
+  });
+
+  // volitelně: při scrollu zvýraznit aktivní kategorii
+  window.addEventListener('scroll', () => {
+    let fromTop = window.scrollY + 100;
+    buttons.forEach(button => {
+      const cat = button.getAttribute('data-cat');
+      const section = document.getElementById(cat);
+      if (
+        section.offsetTop <= fromTop &&
+        (section.offsetTop + section.offsetHeight) > fromTop
+      ) {
+        buttons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+      }
+    });
+  });
+</script>
+</body>
+</html>
+</body>
+

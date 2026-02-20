@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* jemný lineární gradient pro pozadí s tóny žluté a světle zelené */
+  background: linear-gradient(135deg, #eef07f 0%, #d8df60 50%, #b7c240 100%);
+  color: #000000;
+  /* lehká textura přes průhledný vzor (volitelné) */
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(255 255 255 / 0.1), transparent 25%),
+    radial-gradient(circle at 80% 90%, rgba(255 255 255 / 0.07), transparent 30%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header p{
+  color:white;
+}
+header {
+  text-align: center;
+  background: #7c8a2e;
+  padding: 20px 0;
+  border-bottom: 2px solid #ffffff;
+  box-shadow: 0 3px 8px rgb(255, 255, 255); /* trochu výraznější stín */
+  margin-bottom: 30px;
+  position: sticky; /* header zůstane nahoře při scrollu */
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  justify-content: center;
+  margin: 0;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 28px;
+  letter-spacing: 1px;
+  /* malý textový stín pro lepší čitelnost */
+  text-shadow: 1px 1px 2px rgba(101, 113, 24, 0.6);
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  padding: 0 20px;
+  background: rgba(255 255 255 / 0.9); /* jemné bílé pozadí s průhledností */
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(101, 113, 24, 0.15);
+}
+
+nav.categories {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+nav.categories button {
+  background: #d8df60; /* světle zelená barva pozadí */
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #212605;
+  cursor: pointer;
+  padding: 10px 22px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(101, 113, 24, 0);
+}
+
+nav.categories button:hover,
+nav.categories button.active {
+  color: white;
+  background-color: #647118;
+  box-shadow: 0 4px 15px rgba(31, 49, 5, 0.7);
+}
+
+section.drink-category {
+  margin-bottom: 50px;
+  background: #f0f5b4; /* jemný odstín světlejší zelené */
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 10px rgba(31, 49, 5, 0.7);
+}
+
+section.drink-category h2 {
+  color: #647118;
+  font-weight: 700;
+  border-bottom: 3px solid #647118;
+  padding-bottom: 8px;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.drink {
+  background: white;
+  box-shadow: 0 6px 15px rgba(73, 117, 13, 0.25); /* výraznější stín */
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.drink:hover {
+  box-shadow: 0 10px 25px rgba(73, 117, 13, 0.4);
+  transform: translateY(-3px);
+}
+
+.drink-info {
+  max-width: 75%;
+}
+
+.drink-name {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.drink-description {
+  font-style: italic;
+  color: #666;
+  font-size: 14px;
+}
+
+.drink-price {
+  font-weight: 700;
+  color: #647118;
+  font-size: 18px;
+}
+
+
+nav.categories button {
+  background: #d8df60; /* světle zelená barva pozadí */
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #3a4308;
+  cursor: pointer;
+  padding: 10px 22px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(101, 113, 24, 0);
+}
+
+nav.categories button:hover,
+nav.categories button.active {
+  color: white;
+  background-color: #647118;
+  box-shadow: 0 4px 15px rgba(73, 117, 13, 0.7);
+}
+
+
+@media (max-width: 600px) {
+  nav.categories {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .drink {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .drink-price {
+    margin-top: 12px;
+  }
+}
